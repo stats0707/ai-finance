@@ -1,3 +1,52 @@
 # ai-finance
---a file folder for summer-seesion of ai finance supported by Peking University 
-start from the data collection and visualization to analysis, applying to stock-trading
+
+> 北京大学暑期课程 · AI 金融项目  
+> 从数据采集、可视化到分析，应用于股票交易
+
+---
+
+## 长飞光纤 (601869.SH) 交易指标仪表盘
+
+本仪表盘基于 **Tushare Pro API** 获取的日线交易数据，使用 **Chart.js** 构建交互式可视化界面。
+
+### 在线访问
+
+- **GitHub Pages:** [https://stats0707.github.io/ai-finance/](https://stats0707.github.io/ai-finance/)
+
+### 仪表盘功能
+
+| 模块 | 说明 |
+|------|------|
+| 关键指标卡片 | 最新价、总收益率、最高/最低价、涨跌天数统计 |
+| 收盘价走势图 | 收盘价 + 20日均线 + 成交量（红涨绿跌） |
+| 日收益率分布 | 直方图展示收益率分布形态 |
+| 每日收益率 | 柱状图展示逐日涨跌幅 |
+| 价格区间图 | OHLC 四线对比，展示日内波动 |
+| 数据明细表 | 全部 242 个交易日数据，支持滚动浏览 |
+
+### 数据说明
+
+- **股票:** 长飞光纤光缆股份有限公司 (601869.SH)
+- **时间范围:** 2025-07-04 ~ 2026-07-04
+- **数据来源:** Tushare Pro API
+- **交易天数:** 242 天
+
+### 文件结构
+
+```
+ai-finance/
+├── index.html                  # 仪表盘主页（含嵌入数据）
+├── changfei_fiber_daily.csv    # 原始交易数据 CSV
+└── README.md
+```
+
+### 技术栈
+
+- **前端:** HTML5 + CSS3 + JavaScript (ES6)
+- **图表库:** Chart.js 4.4.1
+- **数据源:** Tushare Pro
+- **部署:** GitHub Pages
+
+---
+
+> ⚠️ **免责声明:** 本仪表盘仅供学习研究参考，不构成任何投资建议。股市有风险，投资需谨慎。
